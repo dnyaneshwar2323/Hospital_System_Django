@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% include "navbar.html" %}
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us </h1>
+  <p>Spark Hospitals making the largest chain of hospitals in Maharashtra..</p>
+  <p>Our Spark hospitals are easy to reach due to their strategic locations in the cities of Pune, Mumbai.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="{% static "images/balajitambe.jpg" %}" alt="John" style="width:100%">
+      <div class="container">
+        <h2 style="text-align:center">Dr. Balaji Tambe</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Dr. Balaji Tambe is an Ayurvedic doctor, engineer, artist, cosmologist and agriculturalist. His father Ved Shastra Sampanna Shri Vasudev Tambeshastri was an authority on the Vedic scriptures and spiritual sciences. Dr. Shri Balaji Tambe shares his time between Karla, India as well as Munich and Gleichen in Germany and conducts seminars all over the world. His family consists of his wife, two sons and daughters-in-law as well as four granddaughters, apart from a large, extended family of disciples.</p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="{% static "images/bhonagiri.jpg" %}" alt="John" style="width:100%">
+      <div class="container">
+
+        <h2 style="text-align:center">Dr. Shivram Bhonagiri</h2>
+        <p class="title">Art Director</p>
+        <p>Dr. Shivram Bhonagiri is Consultant General Physician.  He completed MD - Internal Medicine from B J Medical College. He is a member of Indian Medical Association (IMA). Some of the services provided by the doctor are: Chest Diseases,Unilateral Salpingo-Oophorectomy,Reproduction,Infectious Disease Treatment and Labiaplasty.He has numerous successful treatment cases registered in his name and patients are very happy with the kind of hospitality displayed him.
+
+</p>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="{% static "images/shivde.jpg" %}" alt="John" style="width:100%">
+      <div class="container">
+        <h2 style="text-align:center">Dr. Subodh Shivde</h2>
+        <p class="title">Designer</p>
+        <p>Dr. Subodh Shivde is an Urologist in Pune. He is a renowned and highly trusted personality in the medical fraternity. Dr. Subodh Shivde owns rich experience in Urology. Dr. Subodh Shivde offers some advanced medical treatments for Benign Prostatic Hypertrophy, Urinary Bladder Stones, Prostate Cancer, Testicular Tumors, Urinary Tract Infection (UTI) etc.
+Looking at his ever-increasing popularity, one thing is for sure that he is one of the best trusted doctors in Pune.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+{% include "footer.html" %}
+</body>
+<!--
+developed By : Dnyaneshwar Chavan in Spark It Training Institute
+-->
+
+</html>
